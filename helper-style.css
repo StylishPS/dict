@@ -1,5 +1,5 @@
 h1, p, button {
-    color: azure;
+    color: rgb(255, 252, 237);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     white-space: nowrap;
 }
@@ -36,7 +36,7 @@ button {
     font-size: 15px;
     border-radius: 10px;
     padding-top: 5px;
-    padding-bottom:5px;
+    padding-bottom: 5px;
     cursor: pointer;
 }
 h6 {
@@ -63,6 +63,8 @@ div {
 }
 .first_list button:hover {
     background-color: #583b39;
+    transform: scale(1.05);
+    transition: 0.4s;
 }
 
 /* Второй лист */
@@ -71,20 +73,51 @@ div {
 }
 .second_list button:hover {
     background-color: rgb(59, 75, 31);
+    transform: scale(1.05);
+    transition: 0.4s;
 }
 
 /* Третий лист */
 .third_list button {
-    background-color: firebrick;
+    background-color: rgb(233, 115, 72);
 }
 .third_list button:hover {
-    background-color: rgb(112, 26, 26);
+    background-color: rgb(134, 67, 42);
+    transform: scale(1.05);
+    transition: 0.4s;
 }
 
 /* Четвёртый лист */
 .fourth_list button {
-    background-color: rgb(15, 88, 72);
+    background-color: firebrick;
 }
 .fourth_list button:hover {
+    background-color: rgb(112, 26, 26);
+    transform: scale(1.05);
+    transition: 0.4s ease-in-out;
+}
+/* Четвёртый лист */
+.fifth_list button {
+    background-color: rgb(15, 88, 72);
+}
+.fifth_list button:hover {
     background-color: rgb(10, 63, 52);
+    transform: scale(1.05);
+    transition: 0.4s ease-in-out;
+}
+
+.header_button{
+    margin-bottom: -10px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    background: #16599b;
+    font-weight: 500;
+}
+.header_button:active{
+    background: #3a6edd;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 252, 237);
 }
